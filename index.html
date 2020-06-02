@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+<section class="container-fluid">
+    <section class="content">
+        <section class="col-12">
+            <div class="header d-flex align-items-center justify-content-start bg-dark p-5">
+                <!--                    My Initials and Image-->
+                <div class="d-flex justify-content-start mr-5">
+                    <div class="initials align-self-center mr-1">KF</div>
+                    <div><img src="images/KavehPhoto.jpg" alt="kavehPhoto" class="rounded-circle" width="100px"
+                              height="100px"></div>
+                </div>
+                <!--                    Title-->
+                <div class="text-white">
+                    <h3>My PortFolio</h3>
+                </div>
+                <!--                    Toggle Menu-->
+                <div>
+                    <div class="outer-wrap">
+                        <button type="button" class="btn btn-primary toggle-btn">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                        <div class="narrow d-inline-block">
+                            <div
+                                    class="border border-left border-primary list-unstyled d-inline-flex align-items-center justify-content-center bg-primary">
+                                <div><a class="inner-item" href="https://www.facebook.com/"><i
+                                        class="fab fa-facebook-square text-success"></i></a>
+                                </div>
+                                <div><a class="inner-item" href="https://telegram.org/"><i
+                                        class="fab fa-telegram text-white"
+                                        aria-hidden="true"></i></a></div>
+                                <div><a class="inner-item" href="https://twitter.com/i/flow/signup"><i
+                                        class="fab fa-twitter-square text-danger"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--                    End of Toggle Menu-->
+            </div>
+        </section>
+    </section>
+
+</section>
+<script src="dist/js/jquery-1.12.4.min.js"></script>
+<script src="dist/js/popper.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- Font Awesome-->
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script>
+    document.querySelector(".toggle-btn").addEventListener("click", toggler);
+    function toggler() {
+        document.querySelector(".border").classList.toggle("inner-transition");
+    }
+</script>
+</body>
+</html>
