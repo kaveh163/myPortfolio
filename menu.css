@@ -29,7 +29,7 @@
 }
 
 
-.btn {
+.outer-wrap .btn {
     border-radius: 0;
     float: left;
 }
