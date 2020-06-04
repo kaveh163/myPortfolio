@@ -2,10 +2,34 @@
     background-color: red;
     /*height:200px;*/
 }
+
 .initials {
     font-size: 2.5rem;
-    color:white;
+    color: white;
 }
-.text h3{
+
+.text h3 {
     font-family: "Comic Sans MS";
+}
+
+.menu-underline {
+    border: 1px solid red;
+    width: 30%;
+    margin: -5px 0 10px 0;
+}
+
+.main-list a{
+    display: block;
+    position: relative;
+
+}
+
+.main-list svg.svg-inline--fa {
+    position: absolute;
+    right:100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display:block;
+
+
 }

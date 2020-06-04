@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
 <section class="container-fluid">
-    <section class="content">
+    <!--    Header section-->
+    <section class="row">
         <section class="col-12">
             <div class="header d-flex align-items-center justify-content-between bg-dark p-5">
                 <!--                    My Initials and Image-->
@@ -50,7 +51,39 @@
                 <!--                    End of Toggle Menu-->
             </div>
         </section>
+        <!--        End of header section-->
     </section>
+</section>
+<section class="container-fluid">
+    <!--        Main menu-->
+    <section class="row mt-1">
+        <section class="col-3 pr-1">
+            <div class="bg-primary p-2">
+                <h2 class="text-dark">Menu</h2>
+                <hr class="menu-underline mr-auto">
+                <div class="list-group main-list">
+                    <a href="#" class="list-group-item list-group-item-action">Home <i class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">education <i class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">projects <i class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">hobbies <i class="fas fa-caret-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="col-9 pl-0">
+            <div class="bg-success">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam debitis distinctio doloribus, ducimus
+                eius expedita molestiae repellendus voluptas! Aliquid amet assumenda atque beatae dolore mollitia non
+                optio repellendus tenetur vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat
+                harum nostrum quis similique totam, voluptas. Fuga ut, veniam. Accusantium beatae enim eveniet,
+                excepturi fugit numquam odio praesentium quam unde! Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Ad, assumenda atque cupiditate facilis laborum mollitia quod ratione sed sit vero? Asperiores at
+                itaque laudantium molestias non numquam quidem sed suscipit?
+            </div>
+        </section>
+
+    </section>
+    <!--        End of Main menu-->
+</section>
 
 </section>
 <script src="dist/js/jquery-1.12.4.min.js"></script>
@@ -60,6 +93,7 @@
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <script>
     document.querySelector(".toggle-btn").addEventListener("click", toggler);
+
     function toggler() {
         document.querySelector(".border").classList.toggle("inner-transition");
     }
