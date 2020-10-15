@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .header {
     background-color: red;
     /*height:200px;*/
@@ -11,7 +14,9 @@
 .text h3 {
     font-family: "Comic Sans MS";
 }
-
+.menu {
+    height:360px;
+}
 .menu-underline {
     border: 1px solid red;
     width: 30%;
@@ -32,4 +37,44 @@
     display:block;
 
 
+}
+.state1{
+    left:0;
+    position:relative;
+    transition: left 5s;
+}
+
+.state2{
+    left:100%;
+    position:relative;
+    transition: left 5s;
+}
+#headline{
+    background-color:red;
+    color:white;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+.slider {
+    width:100%;
+}
+.pics {
+    margin-top: -140px;
+}
+hr{
+    width:100%;
+    border: 2px solid white;
+}
+.socket {
+    color:white;
+    text-align: center;
+}
+.skt {
+    display: block;
+    margin-top: 30px!important;
+    font-size: 20px;
+}
+.skt-ft {
+    font-family: "Comic Sans MS";
+    font-size: 20px;
 }

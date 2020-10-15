@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="slider/engine1/style.css">
-
+    <link rel="stylesheet" href="lightbox/dist/css/lumos.css">
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="menu.css">
@@ -61,52 +61,104 @@
 </section>
 <section class="container-fluid">
     <!--        Main menu-->
-    <section class="row mt-1">
+    <section class="row mt-1" style="height: 360px;overflow: auto">
         <section class="col-3 pr-1">
             <div class="bg-primary p-2 menu">
                 <h2 class="text-dark">Menu</h2>
                 <hr class="menu-underline mr-auto">
                 <div class="list-group main-list">
-                    <a href="index.html" class="list-group-item list-group-item-action">Home <i class="fas fa-caret-right"></i></a>
-                    <a href="#" class="list-group-item list-group-item-action">Education <i class="fas fa-caret-right"></i></a>
-                    <a href="#" class="list-group-item list-group-item-action">Projects <i class="fas fa-caret-right"></i></a>
-                    <a href="#" class="list-group-item list-group-item-action">Hobbies <i class="fas fa-caret-right"></i></a>
-                    <a href="gallery.html" class="list-group-item list-group-item-action">Gallery <i class="fas fa-caret-right"></i></a>
+                    <a href="index.html" class="list-group-item list-group-item-action">Home <i
+                            class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">Education <i
+                            class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">Projects <i
+                            class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">Hobbies <i
+                            class="fas fa-caret-right"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action">Gallery <i
+                            class="fas fa-caret-right"></i></a>
                 </div>
             </div>
         </section>
         <section class="col-9 pl-0">
-            <div class="bg-success">
-<!--                start slider-->
-                <section class="slider">
-                    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-                    <div id="wowslider-container1">
-                        <div class="ws_images"><ul>
-                            <li><img src="slider/data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
-                            <li><img src="slider/data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
-                            <li><img src="slider/data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
-                            <li><img src="slider/data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
-                            <li><img src="slider/data1/images/mackenzie.jpg" alt="Mackenzie" title="Mackenzie" id="wows1_4"/></li>
-                            <li><img src="slider/data1/images/macodrumlibrary.jpg" alt="jquery carousel" title="MacodrumLibrary" id="wows1_5"/></a></li>
-                            <li><img src="slider/data1/images/universitycentre.jpg" alt="University-centre" title="University-centre" id="wows1_6"/></li>
-                        </ul></div>
-                        <div class="ws_bullets"><div>
-                            <a href="#" title="1"><span><img src="slider/data1/tooltips/1.jpg" alt="1"/>1</span></a>
-                            <a href="#" title="2"><span><img src="slider/data1/tooltips/2.jpg" alt="2"/>2</span></a>
-                            <a href="#" title="3"><span><img src="slider/data1/tooltips/3.jpg" alt="3"/>3</span></a>
-                            <a href="#" title="4"><span><img src="slider/data1/tooltips/4.jpg" alt="4"/>4</span></a>
-                            <a href="#" title="Mackenzie"><span><img src="slider/data1/tooltips/mackenzie.jpg" alt="Mackenzie"/>5</span></a>
-                            <a href="#" title="MacodrumLibrary"><span><img src="slider/data1/tooltips/macodrumlibrary.jpg" alt="MacodrumLibrary"/>6</span></a>
-                            <a href="#" title="University-centre"><span><img src="slider/data1/tooltips/universitycentre.jpg" alt="University-centre"/>7</span></a>
-                        </div></div>
-                        <div class="ws_shadow"></div>
-                    </div>
+            <section class="row mr-0 ml-0">
 
-                    <!-- End WOWSlider.com BODY section -->
+<!--                <section class="gallery">-->
+                    <section class="col-3">
+
+                        <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img1-1.jpg">
+                            <img src="lightbox/demo/img/img1.jpg" class="img-fluid">
+                        </a>
+
+                    </section>
+                    <section class="col-3">
+
+                        <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img2-2.jpg">
+                            <img src="lightbox/demo/img/img2.jpg" class="img-fluid">
+                        </a>
+
+                    </section>
+                    <section class="col-3">
+
+                        <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img3-3.jpg">
+                            <img src="lightbox/demo/img/img3.jpg" class="img-fluid">
+                        </a>
+
+                    </section>
+                <section class="col-3">
+
+                    <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img4-4.jpg">
+                        <img src="lightbox/demo/img/img4.jpg" class="img-fluid">
+                    </a>
 
                 </section>
-<!--                end slider-->
-            </div>
+
+
+
+                <!--                end gallery-->
+
+            </section>
+
+        </section>
+        <section class="col-9 pl-0 offset-3 pics">
+            <section class="row mr-0 ml-0">
+
+                <!--                <section class="gallery">-->
+                <section class="col-3">
+
+                    <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img5-5.jpg">
+                        <img src="lightbox/demo/img/img5.jpg" class="img-fluid">
+                    </a>
+
+                </section>
+                <section class="col-3">
+
+                    <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img6-6.jpg">
+                        <img src="lightbox/demo/img/img6.jpg" class="img-fluid">
+                    </a>
+
+                </section>
+                <section class="col-3">
+
+                    <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img7-7.jpg">
+                        <img src="lightbox/demo/img/img7.jpg" class="img-fluid">
+                    </a>
+
+                </section>
+                <section class="col-3">
+
+                    <a class="lumos-link" data-lumos="gallery1" href="lightbox/demo/img/img8-8.jpg">
+                        <img src="lightbox/demo/img/img8.jpg" class="img-fluid">
+                    </a>
+
+                </section>
+
+
+
+                <!--                end gallery-->
+
+            </section>
+
         </section>
 
     </section>
@@ -116,7 +168,7 @@
             <div class="jumbotron bg-secondary mt-2 socket" style="height:300px;">
                 <hr>
                 <span class="skt-ft">Made By:</span>
-                <span class="mt-3 skt">Kaveh Frounchi</span>
+               <span class="mt-3 skt">Kaveh Frounchi</span>
             </div>
         </footer>
     </section>
@@ -128,6 +180,7 @@
 <script src="dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
 <script type="text/javascript" src="slider/engine1/script.js"></script>
+<script src="lightbox/dist/js/lumos-min.js"></script>
 <!-- Font Awesome-->
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 
@@ -138,11 +191,12 @@
         document.querySelector(".border").classList.toggle("inner-transition");
     }
 
-    function welcomeInfo(){
+    function welcomeInfo() {
         document.querySelector('#headline').className = 'state2';
         document.querySelector('#headline').addEventListener('transitionend', endTransition);
     }
-    function endTransition(){
+
+    function endTransition() {
         document.querySelector('#headline').className = 'state1';
     }
 </script>
