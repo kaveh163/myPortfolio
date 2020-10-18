@@ -16,6 +16,7 @@
 }
 .menu {
     height:360px;
+    background-color: lightgray;
 }
 .menu-underline {
     border: 1px solid red;
