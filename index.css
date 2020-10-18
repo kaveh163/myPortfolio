@@ -50,10 +50,13 @@
     transition: left 5s;
 }
 #headline{
-    background-color:red;
+    background-color:#708090;
     color:white;
     margin-bottom: 4px;
     text-transform: capitalize;
+}
+.homepage-title{
+    background-color:#708090;
 }
 .slider {
     width:100%;
@@ -78,10 +81,10 @@ hr{
     font-family: "Comic Sans MS";
     font-size: 20px;
 }
-.hobby-header,.project-header {
+.hobby-header,.project-header, .education-header {
     font-size: 35px;
 }
-.hobby-underline,.project-underline {
+.hobby-underline,.project-underline,.education-underline {
     text-align: center!important;
     border: 1px solid black;
     width:40%;
@@ -89,4 +92,31 @@ hr{
 }
 .hobby {
     margin-top: 45px;
+    list-style-type: circle;
+}
+.objective-header,.skills-header {
+    font-weight: bold;
+    background-color: lightgray;
+}
+.master .date, .bachelor-date, .computer-date{
+    display: inline-block;
+    float: right;
+}
+.master-title::after {
+    content: '';
+    clear:both;
+    display:table;
+}
+.bachelor-title::after{
+    content: '';
+    clear:both;
+    display:table;
+}
+.computer-title::after{
+    content: '';
+    clear:both;
+    display:table;
+}
+.master-title, .bachelor-title, .computer-title{
+    background-color: lightgray;
 }
